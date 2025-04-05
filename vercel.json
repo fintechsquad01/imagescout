@@ -1,0 +1,24 @@
+{
+  "name": "imagescout-vercel",
+  "version": "1.0.0",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "devCommand": "npm run dev",
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "env": {
+    "OPENAI_API_KEY": {
+      "type": "encrypted",
+      "description": "OpenAI API Key for GPT-4o integration"
+    },
+    "FALAI_API_KEY": {
+      "type": "encrypted",
+      "description": "Fal.ai API Key for image transformation"
+    }
+  }
+}
